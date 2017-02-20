@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Meak Maakasu Graet Agian!</title>
+        
+        <link rel="shortcut icon" href="images/favicon.png" >
+        <link rel="Bookmark" href="images/favicon.png" >
+        <link href="https://fonts.googleapis.com/css?family=Cuprum|Ubuntu" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" href="maakaasu.css" >
+    </head>
+    
+    <body>
+        <header id="banner"> 
+            <div id="banner-area1">
+                <h1>MAAKAASU</h1>
+                <h2>
+                    <!-- subtitle tähän -->
+                </h2>
+            </div>        
+            <div class="navigation">
+            
+                    <ul class="menu" id="topnav">
+                        <li>
+                            <a href="maakaasu.html" class="front">ETUSIVU</a>
+                        </li>
+                        <li>
+                            <a href="info.html" class="info">MAAKAASU</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="about">KAMPANJA</a>
+                        </li>
+                        <li>
+                            <a href="join.html" class="join us">OSALLISTU</a>
+                        </li>
+                        <li class="icon">
+                            <a href="javascript:void(0);" onclick="openFunction()">&#9776;</a>
+                        </li>
+                    </ul>
+            
+            
+            </div>
+        </header>
+              
+        <div>
+            <section class="white-box">
+                <h3>Uutispalkki-juttu-mikälie tulee myöhemmin about tähän</h3>
+            </section>
+            
+            <section class="white-box">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/bjDQbJUrn6c?rel=0" frameborder="0" allowfullscreen alt="Informatiivinen video"></iframe>
+                </div>
+            </section>
+        </div>      
+        
+    <footer>
+        <div id="banner-area2">
+            <h1>Make Maakaasu Great Again!</h1>
+            
+            <li><strong>Make Maakaasu Ry</strong></li>
+            <li>Puheenjohtaja <strong>Lord Voldemort</strong></li>
+            <li>maakaasu [at] greatagain.fi</li>
+            
+        </div>
+        
+        <p class="bottom-text">&#169 Emma Honkamaa 2017</p>    
+    </footer>    
+      
+    <!-- Oheisen scriptin malli on suoraan katsottu sivulta: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+    <script>
+        function openFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+    
+    </body>
+
+</html>

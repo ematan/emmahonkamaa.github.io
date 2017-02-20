@@ -1,0 +1,213 @@
+html { 
+    background-image: linear-gradient(0deg, #021D5C 10%, #7399F0 100%);
+}
+
+body {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #1c1339;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cuprum', sans-serif;
+    color: #18035E;
+    font-weight: normal;
+    line-height: 1.3;  
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #501CF5;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.gifs {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden; 
+}
+
+.gifs img {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;  
+}
+
+p.image-right {
+    float: right; 
+    padding-left: 20px;
+}
+
+.bottom-text {
+    color: #ECF1FD
+}
+
+/* Tekstiboksit */
+
+.white-box{
+    padding: 10px 20px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #ECF1FD;
+    border-style: dotted;
+    border-color: #9275F1
+}
+
+.white-box-even {
+    padding: 10px 20px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #ECF1FD;
+    border-style: dotted;
+    border-color: #9275F1
+}
+
+/* Banneri-jutut + header/footer*/
+
+#banner {
+  background: #fff;
+  border-top: 0;
+  border: 1px solid;
+  
+}
+
+#banner-area1 {
+    background: black url("images/kaasu-header-matalampi.jpg") no-repeat top center;
+    min-height: 110px;
+    max-height: 240px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#banner-area1 h1{
+    color: ghostwhite;
+    display:block;
+    font-size: 15vw;
+    line-height: 10% ;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    
+}
+
+#banner-area2 {
+    background: black url("images/kaasu-footer.jpg") no-repeat top center;
+    min-height: 150px;
+    text-align: center;
+    overflow: hidden;  
+}
+
+#banner-area2 h1 {
+    color: ghostwhite;
+    display:inline;
+    font-size: calc(14px +  3.5vw);
+    padding-top: 10%;
+}
+
+#banner-area2 li {
+    color: ghostwhite;
+    list-style-type: none  
+}
+
+/* Kaikki valikon jutut: */
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #021D5C;
+}
+
+ul.menu li {float: left;}
+
+ul.menu li a {
+    display: inline-block;
+    color: #ECF1FD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.menu li a:hover {background-color: #0336AD;}
+
+ul.menu li.icon {display: none;}
+
+/* Videon koko yms. */
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Media-Queryt */
+
+@media all and (min-width: 700px) {
+  #banner-area1{
+    min-height: 200px
+  }
+  #banner-area1 h1{
+    font-size: 110px;
+    text-align: center
+  }
+  #banner-area2 h1{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.menu li:not(:first-child) {display: none;}
+  ul.menu li.icon {
+    float: right;
+    display: inline-block;
+  }
+  p.image-right {
+    float: none;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.menu.responsive {position: relative;}
+  ul.menu.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menu.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menu.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
