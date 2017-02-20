@@ -1,4 +1,4 @@
-
+/*!*/
 
 function openFunction() {
             var x = document.getElementById("topnav");
