@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 
 function openFunction() {
             var x = document.getElementById("topnav");
@@ -9,4 +9,4 @@ function openFunction() {
             }
         }
 
-</script>
+
