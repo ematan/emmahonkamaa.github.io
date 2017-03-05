@@ -2,7 +2,7 @@
 var current = 0;
 var articlecount = 2; //make this 1 less than actual count
 var intervalOn = true;
-var localStorage;
+
 
 
 function setcurrent() {
@@ -15,12 +15,22 @@ function setcurrent() {
 }
 
 function kutsuJSON() {
-    $.getJSON("https://honkame2.firebaseio.com/uutiset.json", function (data) {
-      $('#ss-otsikko').html(data[current].otsikko);
-      $('#ss-artikkeli').html(data[current].sisältö);
-      $('#ss-pvm').html(data[current].päivämäärä);
+        $.getJSON("https://honkame2.firebaseio.com/uutiset.json", function (data) {
+
+          $('#ss-otsikko').html(data[current].otsikko);
+          $('#ss-artikkeli').html(data[current].sisältö);
+          $('#ss-pvm').html(data[current].päivämäärä);
+
+      //
       return data;
-    })
+    });
+}
+
+function animoi() {
+  $('.effekti').fadeOut('slow', function() {
+    kutsuJSON();
+    $('.effekti').fadeIn('slow');
+});
 }
 
 function muutos() {
@@ -30,15 +40,15 @@ function muutos() {
     current = current + 1;
   }
   console.log(current);
-  kutsuJSON();
-  localStorage.setItem('index', current)
+  animoi();
+  localStorage.setItem('index', current);
 }
 
-var ajastin =  setInterval(function(){muutos()},5000)
+var ajastin =  setInterval(function(){muutos();},5000);
 
-var window;
+
 window.onload = function () {
-  $("#button-stop").text("Pause")
+  $("#button-stop").text("Pause");
   console.log(current);
   setcurrent();
   console.log(current);
@@ -49,7 +59,7 @@ window.onload = function () {
     $('#ss-pvm').html(data[current].päivämäärä);
     ajastin;
     return data;
-  })
+  });
 
 }
 
@@ -57,16 +67,16 @@ window.onload = function () {
 
 
 function pauseSS() {
-  console.log(intervalOn)
+  console.log(intervalOn);
   if(intervalOn){
     clearInterval(ajastin);
     intervalOn = false;
-    $("#button-stop").text("Resume")
+    $("#button-stop").text("Resume");
   } else {
-    ajastin =  setInterval(function(){muutos()},5000);
+    ajastin =  setInterval(function(){muutos();},5000);
     ajastin;
     intervalOn = true;
-    $("#button-stop").text("Pause")
+    $("#button-stop").text("Pause");
   }
 
 }
@@ -81,8 +91,10 @@ function prevSS() {
   if(intervalOn){
     pauseSS();
   }
+  $('.effekti').fadeOut(400);
   localStorage.setItem('index', current);
-  kutsuJSON();
+  $('.effekti').fadeIn(400);
+  animoi();
 }
 
 function nextSS(){
@@ -95,5 +107,5 @@ function nextSS(){
     current += 1;
   }
   localStorage.setItem('index', current);
-  kutsuJSON();
+  animoi();
 }

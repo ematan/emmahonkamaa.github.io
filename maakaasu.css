@@ -78,6 +78,10 @@ p.image-right {
     border-color: #9275F1
 }
 
+.white-box h2 {
+  line-height: 1;
+  margin-top: 1;
+}
 /* Banneri-jutut + header/footer*/
 
 #banner {
