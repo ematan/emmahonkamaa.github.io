@@ -1,5 +1,5 @@
-html { 
-    background-image: linear-gradient(0deg, #021D5C 10%, #7399F0 100%);
+html {
+    background-image: linear-gradient(160deg, #d2ddef 10%, #6e86ad 100%);
 }
 
 body {
@@ -9,14 +9,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;  
+    max-width: 800px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cuprum', sans-serif;
     color: #18035E;
     font-weight: normal;
-    line-height: 1.3;  
+    line-height: 1.3;
 }
 
 h3 {font-size: 22px}
@@ -38,7 +38,7 @@ b, strong {
 	padding-bottom: 56.25%;
 	padding-top: 30px;
 	height: 0;
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 .gifs img {
@@ -46,11 +46,11 @@ b, strong {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;  
+	height: 100%;
 }
 
 p.image-right {
-    float: right; 
+    float: right;
     padding-left: 20px;
 }
 
@@ -62,7 +62,7 @@ p.image-right {
 
 .white-box{
     padding: 10px 20px 30px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
     background: #ECF1FD;
     border-style: dotted;
@@ -84,7 +84,7 @@ p.image-right {
   background: #fff;
   border-top: 0;
   border: 1px solid;
-  
+
 }
 
 #banner-area1 {
@@ -102,18 +102,18 @@ p.image-right {
     line-height: 10% ;
     text-shadow:
        3px 3px 0 #000,
-     -1px -1px 0 #000,  
+     -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
-    
+
 }
 
 #banner-area2 {
     background: black url("images/kaasu-footer.jpg") no-repeat top center;
     min-height: 150px;
     text-align: center;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 #banner-area2 h1 {
@@ -125,7 +125,7 @@ p.image-right {
 
 #banner-area2 li {
     color: ghostwhite;
-    list-style-type: none  
+    list-style-type: none
 }
 
 /* Kaikki valikon jutut: */
