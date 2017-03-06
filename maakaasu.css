@@ -33,6 +33,10 @@ b, strong {
     font-weight: 600;
 }
 
+#news {
+  text-decoration: underline;
+}
+
 .gifs {
     position: relative;
 	padding-bottom: 56.25%;
