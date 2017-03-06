@@ -91,9 +91,7 @@ function prevSS() {
   if(intervalOn){
     pauseSS();
   }
-  
   localStorage.setItem('index', current);
-
   animoi();
 }
 
