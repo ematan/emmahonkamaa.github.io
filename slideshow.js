@@ -44,7 +44,7 @@ function muutos() {
   localStorage.setItem('index', current);
 }
 
-var ajastin =  setInterval(function(){muutos();},5000);
+var ajastin =  setInterval(function(){muutos();},8000);
 
 
 window.onload = function () {
@@ -61,7 +61,7 @@ window.onload = function () {
     return data;
   });
 
-}
+};
 
 //$("#button-stop").text("Pause")
 
@@ -73,7 +73,7 @@ function pauseSS() {
     intervalOn = false;
     $("#button-stop").text("Resume");
   } else {
-    ajastin =  setInterval(function(){muutos();},5000);
+    ajastin =  setInterval(function(){muutos();},8000);
     ajastin;
     intervalOn = true;
     $("#button-stop").text("Pause");
