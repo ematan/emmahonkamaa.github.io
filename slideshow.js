@@ -91,9 +91,9 @@ function prevSS() {
   if(intervalOn){
     pauseSS();
   }
-  $('.effekti').fadeOut(400);
+  
   localStorage.setItem('index', current);
-  $('.effekti').fadeIn(400);
+
   animoi();
 }
 
