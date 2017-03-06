@@ -47,7 +47,7 @@ var ajastin =  setInterval(function(){muutos();},8000);
 
 
 window.onload = function () {
-  $("#button-stop").text("Pause");
+
   console.log(current);
   setcurrent();
   console.log(current);
@@ -62,7 +62,7 @@ window.onload = function () {
 
 };
 
-//$("#button-stop").text("Pause")
+//$("#button-stop").find($(".fa")).removeClass('fa-pause').addClass('fa-play');
 
 
 function pauseSS() {
@@ -70,12 +70,13 @@ function pauseSS() {
   if(intervalOn){
     clearInterval(ajastin);
     intervalOn = false;
-    $("#button-stop").text("Resume");
+    $(".fa").removeClass('fa-pause').addClass('fa-play');
+    //$("#button-stop").text("Resume");
   } else {
     ajastin =  setInterval(function(){muutos();},8000);
     ajastin;
     intervalOn = true;
-    $("#button-stop").text("Pause");
+    $(".fa").removeClass('fa-play').addClass('fa-pause');
   }
 
 }
