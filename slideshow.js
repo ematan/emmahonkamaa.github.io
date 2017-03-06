@@ -27,10 +27,9 @@ function kutsuJSON() {
 }
 
 function animoi() {
-  $('.effekti').fadeOut('slow', function() {
+  $('.effekti').fadeOut('normal', function(){
     kutsuJSON();
-    $('.effekti').fadeIn('slow');
-});
+  }).fadeIn("normal");
 }
 
 function muutos() {
@@ -94,6 +93,7 @@ function prevSS() {
   localStorage.setItem('index', current);
   animoi();
 }
+
 
 function nextSS(){
   if(intervalOn){
