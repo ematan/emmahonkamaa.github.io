@@ -70,6 +70,25 @@
             </section>
 
             <section class="white-box">
+              <div class="video">
+                <video width="320" height="240" controls>
+                    <source src="maakaasu-video.mp4" type="video/mp4"> <!-- Safari/IOS -->
+                    <source src="movie.ogv" type="video/ogg">          <!-- Firefox/Opera/Chrome -->
+
+                    <!-- kokeillaan Flashia -->
+                    <object width="320" height="240" type="application/x-shockwave-flash" data="__FLASH__.sfw">
+                        <param name="movie" value="__FLASH__.sfw" />
+                        <param name="flashwars" value="controlbar=over&amp;image=__POSTER__.jpg&amp;file=__VIDEO__.mp4" />
+                        <img src="__VIDEO__.jpg" width="320" height="240" alt"__TITLE___" title="Your browser cannot play the video T__T." />
+                    </object>
+                </video>
+              </div>
+              <div>
+                <canvas id="canvas1" width="160" height="96" />
+              </div>
+            </section>
+
+            <section class="white-box">
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/bjDQbJUrn6c?rel=0" frameborder="0" allowfullscreen alt="Informatiivinen video"></iframe>
                 </div>
