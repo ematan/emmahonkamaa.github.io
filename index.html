@@ -70,21 +70,20 @@
             </section>
 
             <section class="white-box">
-              <div class="video">
-                <video width="320" height="240" controls>
-                    <source src="maakaasu-video.mp4" type="video/mp4"> <!-- Safari/IOS -->
-                    <source src="movie.ogv" type="video/ogg">          <!-- Firefox/Opera/Chrome -->
 
-                    <!-- kokeillaan Flashia -->
-                    <object width="320" height="240" type="application/x-shockwave-flash" data="__FLASH__.sfw">
-                        <param name="movie" value="__FLASH__.sfw" />
-                        <param name="flashwars" value="controlbar=over&amp;image=__POSTER__.jpg&amp;file=__VIDEO__.mp4" />
-                        <img src="__VIDEO__.jpg" width="320" height="240" alt"__TITLE___" title="Your browser cannot play the video T__T." />
-                    </object>
+                <video class="video-oma"  controls poster="videot/esikuva.png">
+
+                    <source src="videot/Maakaasu_720p.ogv" type="video/ogg"><!-- Firefox / Opera / Chrome10 -->
+                    <source src="videot/Maakaasu_720p.mpg" type="video/mpg"><!-- no idea :'D -->
+                    <source src="videot/Maakaasu_720p.webm" type="video/webm"><!-- Opera? -->
+                    Your browser does not support the video tag.
                 </video>
-              </div>
+
               <div>
-                <canvas id="canvas1" width="160" height="96" />
+                <p>
+	                Mikäli selaimesi ei tue videomuotoja, voit ladata videon <a href="videot/Maakaasu_720.mp4">tästä.</a>
+
+                </p>
               </div>
             </section>
 
