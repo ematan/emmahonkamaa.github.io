@@ -80,11 +80,12 @@ function drawEnemy(context) {
     if (enemyArray[i].x-32<=1 || enemyArray[i].x+32>=600) enemyArray[i].speedX = -enemyArray[i].speedX
     if (enemyArray[i].y-32<=1 || enemyArray[i].y+32>=600) enemyArray[i].speedY = -enemyArray[i].speedY
 
-    if (
-		player.x <= (enemyArray[i].x + 24)
-		&& enemyArray[i].x <= (player.x + 24)
-		&& player.y <= (enemyArray[i].y + 32)
-		&& enemyArray[i].y <= (player.y + 32)) reset();
+    if (   player.x <= (enemyArray[i].x + 24)
+		    && enemyArray[i].x <= (player.x + 24)
+		    && player.y <= (enemyArray[i].y + 32)
+		    && enemyArray[i].y <= (player.y + 32)){
+      points = points- 1;
+    }
 
     for(var j =  0; j< enemyArray.length; j++){
       if(j!=i){

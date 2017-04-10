@@ -4,6 +4,7 @@ var keysDown;
 var then;
 var counter = 0;
 var mouseDown;
+var points = 0
 
 /*napit ym. mitat*/
 var bWidth = 150;
@@ -105,7 +106,8 @@ var render = function () {
         ctx.fillStyle = "white";
         ctx.fillText("SPEED:",610,50);
         ctx.fillText(player.speed, 610, 80);
-
+				ctx.fillText("POINTS:",610,250);
+        ctx.fillText(points, 610, 280);
 
         drawButtons(ctx);
 
@@ -181,7 +183,7 @@ $(document).ready(function () {
                 executionList = [];
             }
         }
-      }, false); 
+      }, false);
 
     setup(ctx);
     then = Date.now();
